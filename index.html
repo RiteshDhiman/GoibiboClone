@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flights Tickets, Flights Booking at Lowest Airfare, Book Air Tickets-Goibibo</title>
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Rubik:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!----------------------------------NAV BAR----------------------------------------------->
+
+    <div class="navBarContainer centered">
+        <div class="navBar">
+            <div class="mainLogo centered">
+                <a href="#"><img src="/assets/images/homePage/navBar/goibibo-logo.png" alt=""></a>
+            </div>
+            <div class="otherLinks centered">
+                <div class="link centered" id="flights">
+                    <img src="/assets/images/homePage/navBar/flights.png" alt="">
+                    <p>Flights</p>
+                </div>
+
+                <div class="link centered">
+                    <img src="/assets/images/homePage/navBar/hotels.png" alt="">
+                    <p>Hotels</p>
+                </div>
+
+                <div class="link centered">
+                    <img src="/assets/images/homePage/navBar/trains.png" alt="">
+                    <p>Trains</p>
+                </div>
+
+                <div class="link centered">
+                    <img src="/assets/images/homePage/navBar/cabs.png" alt="">
+                    <p>Cabs</p>
+                </div>
+
+                <div class="link centered">
+                    <img src="/assets/images/homePage/navBar/bus.png" alt="">
+                    <p>Bus</p>
+                </div>
+
+                <div class="link centered">
+                    <img src="/assets/images/homePage/navBar/holidays.png" alt="">
+                    <p>Holidays</p>
+                </div>
+
+                <div class="link centered">
+                    <img src="/assets/images/homePage/navBar/forex.png" alt="">
+                    <p>Forex</p>
+                </div>
+            </div>
+
+<!--**********************LOGIN AND STUFF***********************-->
+
+            <div class="loginAndStuff centered">
+                <div class="subLogin centered">
+
+                    <div class="manageBooking centered">
+                        <div class="briefCase centered">
+                            <img src="/assets/images/homePage/navBar/briefcase.png" alt="">
+                        </div>
+                        <div class="bookingText centered">
+                            <p id="book1" class="fontStyle">My Trips</p>
+                            <p id="book2" class="fontStyle">Manage Booking</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="loginSignUp centered fontStyle">
+                        <i class="fa-solid fa-user fa-2x" style="color: #2274e0;"></i>
+                        <p>LOGIN / SIGNUP   </p>
+                        <p>v</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------MAIN CONTENT----------------------------------------------->
+
+    <div class="mainSuperContainer">
+        <div class="superHeader centered fontStyle">Domestic and International Flight</div>
+
+        <div class="bookingContainer centered">
+            <div class="subBookingContainer centered">
+                <form action="" method="post">
+
+                    <div class="radioBook centered fontStyle">
+                        <div class="radioMirchi centered" id="rm1">
+                            <input type="radio" id="oneway" name="flightType" value="One-Way">
+                            <label for="oneway">One-way</label>
+                        </div>
+
+                        <div class="radioMirchi centered" id="rm2">
+                            <input type="radio" id="roundtrip" name="flightType" value="Round-Trip">
+                            <label for="roundtrip">Round-trip</label>
+                        </div>
+
+                        <div class="radioMirchi centered" id="rm3">
+                            <input type="radio" id="multicity" name="flightType" value="Multi-City">
+                            <label for="multicity">Multi-city</label>
+                        </div>
+                    </div>
+
+                    <div class="centerSection centered">
+                        <fieldset id="fs1"><legend>From</legend>
+                            <input type="text" placeholder="Enter city or Airport"required>
+                        </fieldset>
+
+                        <fieldset id="fs2"><legend>To</legend>
+                            <input type="text" placeholder="Enter city or Airport"required>
+                        </fieldset>
+
+                        <fieldset id="fs3"><legend>Departure</legend>
+                            <input type="date"required>
+                        </fieldset>
+
+                        <fieldset id="fs4"><legend>Return</legend>
+                            <input type="date" placeholder="Click to add a return flight for better discounts" required>
+                        </fieldset>
+
+                        <fieldset id="fs5"><legend>Travellers & Class</legend>
+                            <select name="" id="" class="fontStyle" required>
+                                <option value="">Economy</option>
+                                <option value="">Premium Economy</option>
+                                <option value="">Business</option>
+                                <option value="">First Class</option>
+                            </select>
+                        </fieldset>
+                    </div>
+
+                    <div class="fareType centered fontStyle">
+                        <div class="fareContainer1 centered">
+                            <div class="fare">
+                                <p>Select A</p>
+                                <p>Fare Type:</p>
+                            </div>
+
+                            <div class="fareCategory centered" id="leftmostBorder">
+                                <input type="radio" id="regular" name="category">
+                                <label for="regular">Regular</label>
+                            </div>
+                            <div class="fareCategory centered">
+                                <input type="radio" id="armed" name="category">
+                                <label for="armed">Armed Forces</label>
+                            </div>
+                            <div class="fareCategory centered">
+                                <input type="radio" id="sciti" name="category">
+                                <label for="sciti">Senior Citizen</label>
+                            </div>
+                            <div class="fareCategory centered">
+                                <input type="radio" id="stud" name="category">
+                                <label for="stud">Student</label>
+                            </div>
+                            <div class="fareCategory centered" id="rightmostBorder">
+                                <input type="radio" id="doc&nur" name="category">
+                                <label for="doc&nur">Doctors & Nurses</label>
+                            </div>
+                        </div>
+                        <div class="fareContainer2 centered fontStyle">
+                            <div class="trending centered">
+                                <p>Trending Search:</p>
+                            </div>
+                            <div class="semiDiv1 centered">
+                                Bengaluru
+                                <img src="/assets/images/homePage/mainSection/right-arrow.png" alt="">
+                                Mumbai
+                            </div>
+                            <div class="semiDiv2 centered">
+                                Delhi
+                                <img src="/assets/images/homePage/mainSection/right-arrow.png" alt="">
+                                Goa
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="searchFlightsButton centered fontStyle">
+                        <input type="button" value="SEARCH FLIGHTS">
+                    </div>
+
+                </form>
+                
+            </div>
+
+        </div>
+
+   
+<!--------------------------------------------ADVERTISEMENT----------------------------------------------->        
+
+        <div class="advertisement centered">
+            <div class="innerAd centered">
+                <img src="assets/images/homePage/mainSection/ad.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+<!------------------------------------OFFERS SECTION----------------------------------------------->
+
+    <div class="offersContainer centered">
+        <div class="offers">
+            <div class="offersHeader centered fontStyle">
+                <h2>Offers For You</h2>
+            </div>
+            <div class="offersCat centered">
+                <div class="realCat centered fontStyle">
+                    <div class="offersLink centered" id="offerLink1">All</div>
+                    <div class="offersLink">Bank Offers</div>
+                    <div class="offersLink">Flights</div>
+                    <div class="offersLink">Hotels</div>
+                    <div class="offersLink">Cabs</div>
+                    <div class="offersLink">Bus</div>
+                    <div class="offersLink">Trains</div>
+                </div>
+                <div class="seeOffers centered fontStyle">
+                    <div class="subSeeOffers centered">
+                        <p>See All Offers ></p>
+                    </div>
+                </div>
+            </div>
+            <div class="offersCards centered">
+                <div class="subOffersCards centered">
+
+                    <div class="lastCard">
+                        <div class="upperLastCard centered">
+                            <div class="subUpperLastCard centered">
+                                <div class="leftFotu">
+                                    <img src="assets/images/homePage/mainSection/vistara.avif" alt="">
+                                </div>
+                                <div class="rightContent">
+                                    <div class="content1 fontStyle">Flights</div>
+                                    <div class="content2 fontStyle">Book flights starting @ &#8377;1,999 &nbsp;<i class="fa-solid fa-xs fa-chevron-right" style="color: #2276e3;"></i></div>
+                                    <div class="content3 fontStyle"><i class="fa-regular fa-calendar" style="color: #777777;"></i>&nbsp;Ends Today</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lowerLastCard centered fontStyle">
+                            Book Now &nbsp;<i class="fa-solid fa-chevron-right" style="color: #2276e3;"></i>
+                        </div>
+                    </div>
+
+
+
+                    <div class="lastCard">
+                        <div class="upperLastCard centered">
+                            <div class="subUpperLastCard centered">
+                                <div class="leftFotu">
+                                    <img src="assets/images/homePage/mainSection/radisson.avif" alt="">
+                                </div>
+                                <div class="rightContent">
+                                    <div class="content1 fontStyle">Domestic Hotels</div>
+                                    <div class="content2 fontStyle">Get Up to 30% off on Radisson Hotels</div>
+                                    <div class="content3 fontStyle"><i class="fa-regular fa-calendar" style="color: #777777;"></i>&nbsp;Valid till 25th Dec'23</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lowerLastCard centered fontStyle">
+                            View More Details &nbsp;<i class="fa-solid fa-chevron-right" style="color: #2276e3;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="advisory centered">
+        <div class="subAdvisory">
+            <img src="assets/images/homePage/mainSection/advisory.png" alt="">
+        </div>
+    </div>
+
+
+
+
+<!------------------------------------FOOTER SECTION----------------------------------------------->
+
+        <div class="footerContainer centered">
+            <div class="footerSubContainer centered">
+                <div class="fourColumnsSection centered">
+                    <div class="proColumn fontStyle">
+                        <p>OUR PRODUCTS</p>
+                        <ul>
+                            <li>Domestic Hotels</li>
+                            <li>International Hotels</li>
+                            <li>Domestic Flights</li>
+                            <li>International Flights</li>
+                            <li>Multi-City Flights</li>
+                            <li>Couple Friendly Hotels</li>
+                            <li>Nearby Getaways</li>
+                            <li>Bus Booking</li>
+                            <li>Cab Booking</li>
+                            <li>Airport Cabs Booking</li>
+                            <li>Outstation Cabs Booking</li>
+                            <li>Train Booking</li>
+                            <li>Go Stay</li>
+                            <li>Trip Money</li>
+                            <li>Goibibo Advertising Solutions</li>
+                        </ul>
+                    </div>
+
+                    <div class="proColumn fontStyle">
+                        <p>ABOUT US</p>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Investors Return</li>
+                            <li>Management</li>
+                            <li>Terms of Services</li>
+                            <li>User Agreement</li>
+                            <li>Privacy</li>
+                            <li>Careers</li>
+                            <li>Youtube Channel</li>
+                            <li>Technology@Goibibo</li>
+                            <li>Customer Support</li>
+                            <li>Facebook Page</li>
+                            <li>Twitter Handle</li>
+                        </ul>
+                    </div>
+
+                    <div class="proColumn fontStyle">
+                        <p>TRAVEL ESSENTIALS</p>
+                        <ul>
+                            <li>PNR Status</li>
+                            <li>Offers</li>
+                            <li>Airlines Routes</li>
+                            <li>Train Running Status</li>
+                        </ul>
+                    </div>
+
+                    <div class="proColumn fontStyle">
+                        <p>MORE LINKS</p>
+                        <ul>
+                            <li>Cheap Flights</li>
+                            <li>Hotels Near Me</li>
+                            <li>My Bookings</li>
+                            <li>Cancellation</li>
+                            <li>My Account</li>
+                            <li>Wallet</li>
+                            <li>Advertise with Us</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cities fontStyle">
+                    <p>
+                     <b>Top Cities in India</b> &nbsp;&nbsp;&nbsp;Hotels In Goa | Hotels In Jaipur | Hotels In Delhi | Hotels In Mumbai | Hotels In Puri | Hotels In Udaipur | Hotels In Shimla | Hotels In Mahabaleshwar | Hotels In Mussoorie | Hotels In Rishikesh | Hotels In Bangalore | Hotels In Pondicherry | Hotels In Ooty | Hotels In Mysore | Hotels In Manali | Hotels In Nainital | Hotels In Lonavala | Hotels In Hyderabad | Hotels In Varanasi | Hotels In Digha | Hotels In Chandigarh | Hotels In Mount Abu | Hotels In Darjeeling | Hotels In Ahmedabad | Hotels In Pune | Hotels In Vrindavan | Hotels In Agra | Hotels In Amritsar | Hotels In Matheran | Hotels In Haridwar | Hotels In Chennai | Hotels In Tirupati | Hotels In Kolkata | Hotels In Munnar | Hotels In Indore | Hotels In Gurgaon | Hotels In Jodhpur | Hotels In Gulmarg | Hotels In Srinagar | Hotels In Dehradun | Hotels In Shirdi | Hotels In Ujjain | Hotels In Alibag |Hotels In Lucknow | Hotels In Madurai | Hotels In Dwarka
+                    </p>
+
+                    <p>
+                        <b>Popular International Destinations</b> &nbsp;&nbsp;&nbsp;Hotels in Abu Dhabi | Hotels in Amsterdam | Hotels in Bali | Hotels in Bangkok | Hotels in Barcelona | Hotels in Budapest | Hotels in Colombo | Hotels in Dhaka | Hotels in Dubai | Hotels in Hanoi | Hotels in Ho Chi Minh City | Hotels in Istanbul | Hotels in Jakarta | Hotels in Kathmandu | Hotels in Koh Samui | Hotels in Krabi | Hotels in KualaLumpur | Hotels in Langkawi | Hotels in Las Vegas | Hotels in London | Hotels in Los Angeles | Hotels in Madrid | Hotels in Maldives | Hotels in Melbourne | Hotels in Milan | Hotels in New York | Hotels in Paris | Hotels in Pattaya | Hotels in Phi Phi | Hotels in Phuket | Hotels in Pokhara | Hotels in Prague | Hotels in Rome | Hotels in Seoul | Hotels in Singapore | Hotels in Sydney | Hotels in Toronto | Hotels in Vienna | Hotels in Zurich
+                    </p>
+
+                    <p>
+                        <b>Best Hotels in India</b> &nbsp;&nbsp;&nbsp; Fairmont Jaipur | Poovar Island Resort | Grand Hyatt Goa | Hyatt Regency Delhi | Shangri La Bangalore | W Goa | St Regis Goa | Neemrana Fort Palace | Pune Jw Marriot | St Regis Mumbai | Oberoi Udaivilas | The Oberoi New Delhi | The Oberoi Gurgaon | Pragati Resort | Anantya Resorts | Caravela Beach Resort | Hard Rock Hotel Goa | Jw Marriot Juhu | Rambagh Palace Jaipur | Taj Lands End Mumbai | The Lalit New Delhi | The Tamara Coorg | The Lalit Mumbai | The Westin Gurgaon | Radisson Blu Jaipur | Le Meridien Delhi | Noor Mahal Karnal | Riva Beach Resort | Kolkata Novotel | Le Meridian Kochi | Novotel Hyderabad |The Park Hyderabad | Grand Hyatt Mumbai | Jw Marriott Chandigarh | Jaipur Marriott | Suryagarh Jaisalmer | Hilton Jaipur | Taj Lake Palace Udaipur | The Leela Palace Udaipur | Alila Diwa Goa | Evolve Back Coorg | Hyatt Regency Chennai | Le Meridian Goa | Trident Udaipur | Hyatt Ahmedabad | Jai Mahal Palace Jaipur | Le Meridien Jaipur | Evolve Back Hampi | Four Seasons Hotel Mumbai | Park Regis Goa
+                    </p>
+
+                    <p>
+                        <b>Book Best International Hotels</b> &nbsp;&nbsp;&nbsp;Hotels Adaaran Club Rannalhi Maldives | Marina Bay Sands Singapore | City Max Hotel Dubai | Coco Bodu Hithi Maldives | Mandarin Oriental New York | Omega Hotel Dubai | Taj Dubai | Atlantis Dubai | Adaaran Select Hudhuranfushi Maldives | Amari Phuket | Jw Marriott Dubai | Armani Hotel Dubai | Crowne Plaza Dubai | Grand Hyatt Dubai | Saii Lagoon Maldives |Gevora Hotel Dubai | Hotel Boss Singapore | Pan Pacific Singapore | Baiyoke Sky Hotel Bangkok | Centara Pattaya Hotel | Orchard Hotel Singapore | Park Regis Kris Kin Hotel Dubai | V Hotel Lavender Singapore | Admiral Plaza Hotel Dubai | Ambassador Hotel Bangkok | Dusit Thani Pattaya | Fairmont Dubai | Grand Copthorne Waterfront Singapore | Jacob Garden Hotel Dubai | Orchid Vue Hotel Dubai | Park Royal Singapore | Shangri La Dubai | Shangri La Singapore | Sunbeam Hotel Pattaya | Taj Samudra Colombo | V Hotel Lavender Singapore | Bangkok Palace Hotel | Krabi Resort Krabi | Hilton Pattaya | Hyatt Regency Kathmandu
+                    </p>
+
+                    <p>
+                     <b>Book Best Resorts</b> &nbsp;&nbsp;&nbsp; in India Resorts In Wayanad | Resorts In Bangalore | Resorts In Lonavala | Resorts In Munnar | Resorts In Hyderabad | Resorts In Coorg | Resorts In Chikmagalur | Resorts In Ooty | Resorts In Dandeli | Resorts In Pune | Resorts In Goa | Resorts In Pondicherry | Resorts In Alibag | Resorts In Sakleshpur | Resorts In Yercaud | Resorts In Kodaikanal | Resorts In Udaipur | Resorts In Mahabaleshwar | Resorts In Kabini | Resorts In Igatpuri | Resorts In Vagamon | Resorts In Mysore | Resorts In Rishikesh | Resorts In Varkala | Resorts In Jaipur | Resorts In Mahabalipuram | Resorts In Yelagiri | Resorts In Valparai | Resorts In Daman | Resorts In Mandarmani | Resorts In Kumbhalgarh | Resorts In Gokarn | Resorts In Kanakapura | Resorts In Thekkady | Resorts In Matheran | Resorts In Manesar | Resorts In Kumarakom | Resorts In Mumbai | Resorts In Pushkar | Resorts In Bandipur
+                    </p>
+
+                    <p>
+                    <b>Best Hotels in Europe</b>&nbsp;&nbsp;&nbsp; Garth Hotel London | The May Fair London | The Connaught Hotel London | The Ritz London | The Tower Hotel London | Hotel Piemonte Rome | Gezi Hotel Bosphorus Istanbul | Chouchou Hotel Paris | CVK Park Bosphorus Istanbul | black elephant Phunphin | Fer Hotel Istanbul | Hotel Regente Madrid | Hotel Camelia Rome | Drawing Hotel Paris | Opera Inn Suites Rome | Nova Hotel & Apartments | Rome Cavalieri Rome | Four Elements Hotel Amsterdam | Hotel Krone Unterstrass Zurich | Hotel Arts Barcelona | Hotel XX Settembre Rome | Garni Hotel Bristol Zurich | Hotel Tamara Amsterdam | Bulgari Hotel Milan | Grand Peninsula Hotel Istanbul | Royal Hotel Zurich | Central Plaza Zurich | Gallery Hotel Barcelona | Pullman Paris Tour Eiffel | Pera Palace Hotel Istanbul | Hotel Roma Tor Vergata | Placid Hotel Zurich | Four Seasons Hotel Paris | Bricks Hotel Istanbul | Hotel Saba Sultan Istanbul | Apple Inn Hotel Amsterdam | Ajwa Hotel Sultanahmet Istanbul | Hotel De La Paix Paris | Hotel Romance Rome | Holiday Inn Paris | Hotel City Garden Amsterdam
+                    </p>
+
+                    <p>
+                        <b>Popular Flight Sectors</b>&nbsp;&nbsp;&nbsp; Kolkata to Delhi Flight | Hyderabad to Delhi Flight | Chennai to Hyderabad Flight | Delhi to Guwahati Flight | Lucknow to Delhi Flight | Nagpur to Mumbai Flight | Ranchi to Delhi Flight | Ahmedabad to Goa Flight | Mumbai to Chandigarh Flight | Pune to Kolkata Flight | Bangalore to Bhubaneshwar Flight | Bangalore to Guwahati Flight | Chennai to Goa Flight | Chennai to Kolkata Flight  Delhi to Jaipur Flight | Delhi to Leh Flight | Hyderabad to Goa Flight | Bangalore to Ranchi Flight | Delhi to Bagdogra Flight | Srinagar to Delhi Flight
+                    </p>
+
+                    <p>
+                        <b>Top Routes</b> &nbsp;&nbsp;&nbsp;Chandigarh to Delhi Flight | Delhi to Bhopal Flight | Delhi to Dehradun Flight | Delhi to Udaipur Flight | Hyderabad to Tirupati Flight | Kolkata to Chennai Flight | Kolkata to Guwahati Flight | Mumbai to Amritsar Flight | Mumbai to Dehradun Flight | Indore to Goa Flight | Jaipur to Delhi Flight | Kolkata to Bagdogra Flight | Patna to Bangalore Flight | Varanasi to Delhi Flight | Ahmedabad to Kolkata Flight | Delhi to Gorakhpur Flight | Guwahati to Kolkata Flight | Indore to Bangalore Flight | Jaipur to Pune Flight | Mumbai to Raipur Flight
+                    </p>
+
+                    <p>
+                        <b>Popular Domestic Routes</b>&nbsp;&nbsp;&nbsp; Patna to Kolkata Flight | Ranchi to Bangalore Flight | Patna to Delhi Flight | Bangalore to Goa Flight | Delhi to Ranchi Flight | Pune to Nagpur Flight | Chennai to Coimbatore Flight | Delhi to Srinagar Flight | Goa to Mumbai Flight | Hyderabad to Bangalore Flight | Indore to Delhi Flight | Kolkata to Mumbai Flight | Mumbai to Nagpur Flight | Mumbai to Varanasi Flight | Pune to Goa Flight | Bangalore to Chennai Flight | Bangalore to Jaipur Flight | Chennai to Bangalore Flight | Chennai to Madurai Flight | Delhi to Indore Flight
+                    </p>
+
+                    <p>
+                        <b>Top Sectors</b> &nbsp;&nbsp;&nbsp; Delhi to Jammu Flight | Delhi to Varanasi Flight | Hyderabad to Chennai Flight | Hyderabad to Mumbai Flight | Jaipur to Mumbai Flight | Bangalore to Srinagar Flight | Bhopal to Chennai Flight | Chandigarh to Mumbai Flight | Coimbatore to Ahmedabad Flight | Coimbatore to Bangalore Flight |Coimbatore to Mumbai Flight | Delhi to Chandigarh Flight | Delhi to Coimbatore Flight | Delhi to Raipur Flight | Hyderabad to Kolkata Flight | Hyderabad to Vijaywada Flight | Lucknow to Ahmedabad Flight | Madurai to Chennai Flight
+                    </p>
+
+                    <p>
+                        <b>Top Airline Sectors</b> &nbsp;&nbsp;&nbsp; Delhi to Goa Indigo Flight | Delhi to Mumbai Indigo Flight | Mumbai to Delhi Air India Flight |Delhi to Mumbai Air India Flight | Delhi to Goa Air India Flight | Mumbai to Delhi Vistara Flight | Bangalore to Delhi Indigo Flight | Delhi to Mumbai Vistara Flight | Delhi to Bangalore Indigo Flight | Mumbai to Delhi Indigo Flight | Delhi to Hyderabad Spicejet Flight | Delhi to Bangalore Air India Flight | Kolkata to Delhi Indigo Flight |Delhi to Kolkata Indigo Flight | Delhi to Patna Indigo Flight | Pune to Delhi Indigo Flight | Kolkata to Bangalore Indigo Flight | Bangalore to Delhi Air India Flight | Bangalore to Mumbai Indigo Flight | Mumbai to Goa Indigo Flight
+                    </p>
+
+                    <p>
+                        <b>Important Routes</b> &nbsp;&nbsp;&nbsp;Madurai to Hyderabad Flight | Mumbai to Srinagar Flight | Pune to Ranchi Flight |Raipur to Hyderabad Flight | Raipur to Mumbai Flight | Bhopal to Hyderabad Flight | Bhubaneshwar to Chennai Flight | Chennai to Nagpur Flight | Chennai to Port Blair Flight | Cochin to Chennai Flight | Delhi to Mangalore Flight | Hyderabad to Nagpur Flight | Jammu to Delhi Flight | Kolkata to Aizawl Flight | Lucknow to Hyderabad Flight | Udaipur to Delhi Flight | Agartala to Delhi Flight | Bangalore to Imphal Flight | Imphal to Guwahati Flight | Imphal to Kolkata Flight | Indore to Raipur Flight | Kozhikode to Chennai Flight | Mumbai to Imphal Flight
+                    </p>
+
+                    <p>
+                        <b>Trending Domestic Routes</b> &nbsp;&nbsp;&nbsp; Ahmedabad to Mumbai Flight | Bagdogra to Kolkata Flight | Bangalore to Udaipur Flight | Bhopal to Bangalore Flight | Bhubaneshwar to Mumbai Flight | Chandigarh to Chennai Flight | Chennai to Jaipur Flight | Delhi to Vadodara Flight | Goa to Pune Flight | Hyderabad to Coimbatore Flight | Hyderabad to Patna Flight | Jaipur to Bangalore Flight | Lucknow to Kolkata Flight | Mangalore to Bangalore Flight | Mumbai to Coimbatore Flight | Mumbai to Indore Flight | Mumbai to Rajkot Flight | Mumbai to Surat Flight | Mumbai to Vijaywada Flight | Pune to Chennai Flight | Bhubaneshwar to Kolkata Flight | Delhi to Kozhikode Flight | Mumbai to Jodhpur Flight | Ranchi to Mumbai Flight | Vadodara to Chennai Flight
+                    </p>
+
+                    <p>
+                        <b>New Udaan Sectors</b> &nbsp;&nbsp;&nbsp; Guwahati to Rupsi Flight | Rupsi to Kolkata Flight | Guwahati to Agartala Flight | Agartala to Dibrugarh Flight | Dibrugarh to Agartala Flight | Agartala to Guwahati Flight | Guwahati to Pasighat Flight | Pasighat to Shillong Flight | Shillong to Pasighat Flight | Pasighat to Guwahati Flight
+                    </p>
+
+                    <p>
+                        <b>Popular Bus Routes</b> &nbsp;&nbsp;&nbsp; delhi to manali bus | jaipur to delhi bus | chandigarh to delhi bus | bangalore to goa bus | mumbai to goa bus | delhi to dehradun bus | delhi to chandigarh bus | bangalore to chennai bus | hyderabad to bangalore bus |bangalore to hyderabad bus | delhi to jaipur bus | chennai to bangalore bus | indore to bhopal bus | delhi to shimla bus | kolkata to siliguri bus
+                    </p>
+
+                    <p>
+                        <b>Popular Cab Routes</b> &nbsp;&nbsp;&nbsp; mumbai to vadodara cab | mumbai to pune cab | mumbai to nashik cab | nashik to mumbai cab | pune to mumbai cab | delhi to manali cab | delhi to chandigarh cab | pune to shirdi cab | delhi to jaipur cab | mumbai to surat cab | vadodara to mumbai cab |pune to nashik cab | chandigarh to manali cab | delhi to shimla cab | pune to lonavala cab
+                    </p>
+
+                    <p>
+                        <b>Popular Train Routes</b> &nbsp;&nbsp;&nbsp; delhi to goa train | chennai to bangalore train | mumbai to goa train | mumbai to delhi train | delhi to mumbai train | bangalore to chennai train | bangalore to goa train | delhi to jaipur train | patna to gaya train | delhi to chandigarh train | jaipur to delhi train | mysore to bangalore train | delhi to agra train | delhi to lucknow train | mumbai to pune train
+                    </p>
+                </div>
+
+                <div class="advertising">
+                    <img src="assets/images/homePage/footerLast/1stimg.png" alt="">
+                </div>
+
+                <div class="bilkulLast">
+                    <img src="assets/images/homePage/footerLast/2ndimg.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    <script src="/assets/js/home.js"></script>
+
+</body>
+</html>
